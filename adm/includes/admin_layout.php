@@ -9,7 +9,6 @@ function admin_guard() {
 function render_admin_sidebar($currentPage = null) {
     $currentPage = $currentPage ?: basename($_SERVER['PHP_SELF']);
     $links = [
-        'homeadm.php' => 'Início',
         'gerenciar_usuario.php' => 'Gerenciar Usuários',
         'controle_calendario.php' => 'Calendário Escolar',
         'cardapio_semana.php' => 'Cardápio da Semana',

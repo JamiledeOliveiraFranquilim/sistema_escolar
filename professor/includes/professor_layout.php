@@ -11,7 +11,6 @@ function render_professor_sidebar($currentPage = null)
 {
     $currentPage = $currentPage ?: basename($_SERVER['PHP_SELF']);
     $links = [
-        'homeprof.php' => 'Início',
         'calendario.php' => 'Calendário da Turma',
         'comunicacao_aluno.php' => 'Comunicados',
         'disponibilizacao_material.php' => 'Materiais',

@@ -11,7 +11,6 @@ function render_aluno_sidebar($currentPage = null)
 {
     $currentPage = $currentPage ?: basename($_SERVER['PHP_SELF']);
     $links = [
-        'home.php' => 'Início',
         'calendario.php' => 'Meu Calendário',
         'mural_avisos.php' => 'Mural de Avisos',
         'material_apoio.php' => 'Materiais',
