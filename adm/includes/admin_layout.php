@@ -18,13 +18,13 @@ function render_admin_sidebar($currentPage = null) {
         'relatorio.php' => 'Relatórios',
     ];
 
-    echo '<div class="sidebar">';
+    echo '<div>';
     echo '<h2>CEON Admin</h2>';
     echo '<p>Bem-vindo, ' . htmlspecialchars($_SESSION['nome'], ENT_QUOTES, 'UTF-8') . '</p>';
 
     foreach ($links as $file => $label) {
-        $active = $currentPage === $file ? ' style="background:#495057;"' : '';
-        echo '<a href="' . $file . '"' . $active . '>' . $label . '</a>';
+        $activeText = $currentPage === $file ? ' (Ativo)' : '';
+        echo '<a href="' . $file . '">' . $label . $activeText . '</a><br>';
     }
 
     echo '<a href="../logout.php">Sair</a>';

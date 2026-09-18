@@ -1,5 +1,18 @@
-<?php require '../conexao.php'; if (!isset($_SESSION['user_id']) || $_SESSION['tipo'] != 'aluno') { header("Location: ../index.php"); exit; } ?>
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><title>Aluno</title><style>body{font-family:Arial;margin:0;display:flex}.sidebar{width:250px;background:#28a745;color:#fff;height:100vh;padding:20px;box-sizing:border-box}.sidebar a{color:#fff;display:block;padding:10px;text-decoration:none}.content{flex:1;padding:20px}</style></head>
-<body><div class="sidebar"><h2>CEON Aluno</h2><p>Olá, <?php echo $_SESSION['nome']; ?></p>
-<a href="home.php">Início</a><a href="calendario.php">Meu Calendário</a><a href="mural_avisos.php">Mural de Avisos</a><a href="material_apoio.php">Materiais</a><a href="../logout.php">Sair</a></div>
-<div class="content"><h1>Área do Aluno</h1></div></body></html>
+<?php
+require '../conexao.php';
+require 'includes/aluno_layout.php';
+aluno_guard();
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aluno</title>
+</head>
+<body>
+    <?php render_aluno_sidebar('home.php'); ?>
+    <div>
+        <h1>Área do Aluno</h1>
+    </div>
+</body>
+</html>

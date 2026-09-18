@@ -32,7 +32,7 @@ while ($r = $res->fetch_assoc()) {
         <form method="POST">
             <?php foreach (['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta'] as $dia): ?>
                 <label><b><?php echo $dia; ?>:</b></label><br>
-                <textarea name="refeicao[<?php echo $dia; ?>]" style="width:100%;height:60px;"><?php echo $cardapio[$dia] ?? ''; ?></textarea><br><br>
+                <textarea name="refeicao[<?php echo $dia; ?>]"><?php echo $cardapio[$dia] ?? ''; ?></textarea><br><br>
             <?php endforeach; ?>
             <button type="submit">Salvar Cardápio</button>
         </form>

@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <form method="POST">
             <h3>Novo Comunicado</h3>
             <input type="text" name="titulo" placeholder="Título" required><br><br>
-            <textarea name="mensagem" placeholder="Mensagem" required style="width:100%;height:100px;"></textarea><br><br>
+            <textarea name="mensagem" placeholder="Mensagem" required></textarea><br><br>
             <select name="publico">
                 <option value="geral">Geral</option>
                 <option value="aluno">Alunos</option>

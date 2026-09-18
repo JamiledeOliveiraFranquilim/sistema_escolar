@@ -32,8 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cadastrar'])) {
         <h2>Gerenciar Usuários</h2>
         <a href="homeadm.php">Voltar ao Painel</a>
 
-        <?php if (isset($msg)) echo "<p style='color:green;'>$msg</p>"; ?>
-        <?php if (isset($erro)) echo "<p style='color:red;'>$erro</p>"; ?>
+        <?php if (isset($msg)) echo '<p>' . $msg . '</p>'; ?>
+        <?php if (isset($erro)) echo '<p>' . $erro . '</p>'; ?>
 
         <form method="POST">
             <h3>Novo Usuário</h3>

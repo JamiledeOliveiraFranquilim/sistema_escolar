@@ -1,5 +1,18 @@
-<?php require '../conexao.php'; if (!isset($_SESSION['user_id']) || $_SESSION['tipo'] != 'professor') { header("Location: ../index.php"); exit; } ?>
-<!DOCTYPE html><html lang="pt-br"><head><meta charset="UTF-8"><title>Professor</title><style>body{font-family:Arial;margin:0;display:flex}.sidebar{width:250px;background:#0056b3;color:#fff;height:100vh;padding:20px;box-sizing:border-box}.sidebar a{color:#fff;display:block;padding:10px;text-decoration:none}.content{flex:1;padding:20px}</style></head>
-<body><div class="sidebar"><h2>CEON Prof</h2><p>Olá, <?php echo $_SESSION['nome']; ?></p>
-<a href="homeprof.php">Início</a><a href="calendario.php">Calendário da Turma</a><a href="comunicacao_aluno.php">Comunicados</a><a href="disponibilizacao_material.php">Materiais</a><a href="../logout.php">Sair</a></div>
-<div class="content"><h1>Área do Professor</h1></div></body></html>
+<?php
+require '../conexao.php';
+require 'includes/professor_layout.php';
+professor_guard();
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Professor</title>
+</head>
+<body>
+    <?php render_professor_sidebar('homeprof.php'); ?>
+    <div>
+        <h1>Área do Professor</h1>
+    </div>
+</body>
+</html>
