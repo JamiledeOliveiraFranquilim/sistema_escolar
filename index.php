@@ -33,17 +33,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>CEON - Login</title>
 </head>
 <body>
-    <div class="login-box">
-        <h2 style="text-align:center;">CEON</h2>
-        <?php if(isset($erro)) echo "<p style='color:red; text-align:center;'>$erro</p>"; ?>
+    <div>
+        <h2>CEON</h2>
+        <?php if(isset($erro)) echo "<p>$erro</p>"; ?>
         <form method="POST">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="senha" placeholder="Senha" required>
             <button type="submit">Entrar</button>
         </form>
-        <p style="font-size: 12px; text-align: center; color: #666;">Admin: admin@cesi.com / admin123</p>
-        <p style="font-size: 12px; text-align: center; color: #666;">professor@cesi.com / prof123</p>
-        <p style="font-size: 12px; text-align: center; color: #666;">aluno@cesi.com / aluno123</p>
+        <p>Admin: admin@cesi.com / admin123</p>
+        <p>Professor: professor@cesi.com / prof123</p>
+        <p>Aluno: aluno@cesi.com / aluno123</p>
     </div>
 </body>
 </html>

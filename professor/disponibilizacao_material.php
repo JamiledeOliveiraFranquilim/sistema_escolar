@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['arquivo'])) {
     <div>
         <h2>Disponibilizar Material</h2>
         <a href="homeprof.php">Voltar</a>
-        <?php if (isset($msg)) echo "<p style='color:green;'>$msg</p>"; if (isset($erro)) echo "<p style='color:red;'>$erro</p>"; ?>
+        <?php if (isset($msg)) echo '<p>' . $msg . '</p>'; if (isset($erro)) echo '<p>' . $erro . '</p>'; ?>
         <form method="POST" enctype="multipart/form-data">
             <input type="text" name="titulo" placeholder="Título do Material" required><br><br>
             <select name="id_turma" required>
