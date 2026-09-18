@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Calendário</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <?php render_professor_sidebar('calendario.php'); ?>

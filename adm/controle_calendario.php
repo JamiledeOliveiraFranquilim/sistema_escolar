@@ -20,6 +20,7 @@ if (isset($_GET['excluir'])) {
 <head>
     <meta charset="UTF-8">
     <title>Calendário Escolar</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <?php render_admin_sidebar('controle_calendario.php'); ?>

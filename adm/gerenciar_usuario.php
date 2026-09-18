@@ -25,6 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cadastrar'])) {
 <head>
     <meta charset="UTF-8">
     <title>Gerenciar Usuários</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <?php render_admin_sidebar('gerenciar_usuario.php'); ?>

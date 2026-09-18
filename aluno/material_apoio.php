@@ -8,6 +8,7 @@ aluno_guard();
 <head>
     <meta charset="UTF-8">
     <title>Materiais</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <?php render_aluno_sidebar('material_apoio.php'); ?>

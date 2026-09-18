@@ -23,6 +23,7 @@ while ($r = $res->fetch_assoc()) {
 <head>
     <meta charset="UTF-8">
     <title>Cardápio</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <?php render_admin_sidebar('cardapio_semana.php'); ?>

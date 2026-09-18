@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Turmas e Disciplinas</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <?php render_admin_sidebar('gestao_turma_disciplinas.php'); ?>

@@ -12,6 +12,7 @@ $eventos = $conn->query("SELECT COUNT(*) as t FROM eventos")->fetch_assoc()['t']
 <head>
     <meta charset="UTF-8">
     <title>Relatórios</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <?php render_admin_sidebar('relatorio.php'); ?>
